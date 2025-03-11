@@ -43,6 +43,10 @@ body {
 
 /* ==== END GLOBAL ==== */
 
+#logo {
+    vertical-align: bottom;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
