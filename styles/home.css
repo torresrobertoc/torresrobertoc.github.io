@@ -1,0 +1,79 @@
+
+/* ==== HERO ==== */
+header {
+    margin-top: 60px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 15%;
+    width: 50%;
+    margin-top: 20px;
+    max-width: 288px;
+    transform: rotatey(180deg);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+    line-height: .9;
+}
+
+header p {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    padding: .5em;
+}
+
+header a {
+    display: block;
+}
+
+header a.btn-primary {
+    width: 70%;
+    margin: .5em auto .75em auto;
+    max-width: 300px;
+}
+
+/* ==== END HERO ==== */
+
+section {
+    max-width: 90%;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+    section h2 {
+        text-align: left;
+        margin: 2rem 0 .25rem;
+        padding: 0;
+    }
+
+    section h3 {
+        text-align: left;
+        margin: 1rem 0 .20rem;
+    }
+
+    section img {
+        width: 100%;
+        filter: saturate(0);
+    }
+
+    section p {
+        padding: 4px 4px 8px 4px;
+        text-align: left;
+    }
+
+    section .btn {
+        width: 70%;
+        margin: .5em auto .75em auto;
+        max-width: 300px;
+    }

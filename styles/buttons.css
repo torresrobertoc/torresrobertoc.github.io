@@ -1,0 +1,71 @@
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--black);
+    filter: drop-shadow(0px 4px 4px rgba(64, 66, 69, 0.25));
+    margin-bottom: 12px;
+}
+
+/* Primary Buttons */
+.btn-primary {
+    background: linear-gradient(175deg, var(--palegold) 0%, var(--mediumgold) 50%);
+}
+
+.btn-primary:hover {
+    background: var(--mediumgold);
+    filter: none;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+    background: linear-gradient(175deg, white 0%, var(--paleblue) 50%);
+    border: 1px solid var(--paleblue);
+}
+
+.btn-secondary:hover {
+    background: var(--paleblue);
+    filter: none;
+}
+
+/* Links */
+a[href$=".pdf"]::after {
+    content: "download";  /* Uses the 'download' icon */
+    font-family: "Material Symbols Outlined";
+    font-size: 1em;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+/* External Link Icon */
+a[target="_blank"]::after {
+    content: "open_in_new";
+    margin-left: 4px;
+    font-family: "Material Symbols Outlined";
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+a.gold {
+    color: var(--basegold);
+}
+
+    a.gold:hover {
+        color: var(--mediumblue);
+    }
+
+a.blue {
+    color: var(--mediumblue);
+}
+
+    a.blue:hover {
+        color: var(--basegold);
+    }
+    
+    

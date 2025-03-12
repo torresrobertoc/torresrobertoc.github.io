@@ -5,23 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&display=swap&family=Material+Symbols+Outlined" rel="stylesheet">
     
     <title>RT's Portfolio - Roberto Torres</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <!-- ===== NAVIGATION BAR ===== -->
+    
     <nav class="navbar">
-        <img id="logo" src="images/RT logo.png">
+        <div id="logo"><a href="index.html">RT</a></div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
         <div class="nav-links">
             <a href="work.html">Work</a>
             <a href="writings.html">Writings</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+    
+    <!-- ===== HERO ===== -->
+    <header>
+        <img src="images/2025.02-RCT-Portrait.png" alt="Roberto Torres">
+        <h1>Roberto Torres</h1>
+        <h2>Product Designer &amp; Front-End Developer</h2>
+        <p>I craft scalable, user-friendly digital experiences by blending UX principles with clean, production-ready HTML & CSS.</p>
+        <a href="work.html" class="btn btn-primary">View My Work</a>
 
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a work in progress...</p>
+        <a href="writings.html" class="gold">Read My Writings</a>
+    </header>
+    <!-- ===== END HERO ===== -->
+
+    <section>
+        <h2>Featured Work</h2>
+
+        <div class="work-item">
+            <h3>Payment Change Notification (PCN)</h3>
+            <img src="images/BK-PCN---Manager-Home.png" alt="PCN Screenshot">
+            <p>Designed a compliance tracking system to efficiently manage Payment Change Notifications (PCNs) for Bankruptcy cases.</p>
+            <a href="pdfs/2025.03 PCN Case study.pdf" class="blue">Download Case Study (PDF)</a>
+        </div>
+
+        <a href="work.html" class="btn btn-secondary">View More</a>
+
+    </section>
+
+    <section>
+        <h2>Featured Work</h2>
+
+        <div class="work-item">
+            <h3>Payment Change Notification (PCN)</h3>
+            <img src="images/BK-PCN---Manager-Home.png" alt="PCN Screenshot">
+            <p>Designed a compliance tracking system to efficiently manage Payment Change Notifications (PCNs) for Bankruptcy cases.</p>
+            <a href="pdfs/2025.03 PCN Case study.pdf" class="blue">Download Case Study (PDF)</a>
+        </div>
+
+        <a href="work.html" class="btn btn-secondary">View More</a>
+
+    </section>
+
+    <footer>
+        <div class="links">
+            <div class="left">
+                <a href="mailto:roberto.torres@outlook.com" target="_blank">Email</a>
+                <a href="https://linkedin.com/in/torresrobertoc" target="_blank">LinkedIn</a>
+                <a href="https://github.com/torresrobertoc" target="_blank">GitHub</a>
+            </div>
+            <div class="right">
+                <a href="work.html">Work</a>
+                <a href="writings.html">Writings</a>
+            </div>
+        </div>
+        <p class="copy">© 2025 Roberto Torres. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

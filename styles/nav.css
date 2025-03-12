@@ -1,0 +1,102 @@
+/* ==== NAVIGATION BAR ==== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px 8px 16px;
+    background: var(--baseblue);
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s; /* Smooth hiding animation */
+    z-index: 1000; /* Ensures it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.hidden {
+    top: -60px; /* Moves navbar out of view */
+}
+
+
+.navbar a,
+.navbar a:visited{
+    color: white;
+}
+
+#logo a {
+    text-decoration: none;
+    color: var(--mediumblue);
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#logo a:hover {
+    text-shadow: none;
+    text-decoration: underline;
+    color: var(--mediumgold);
+}
+
+
+/* Desktop Menu */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: var(--mediumgold);
+}
+
+/* ==== MOBILE MENU ==== */
+.menu-toggle {
+    display: none;  /* Hidden by default */
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-links {
+        display: none;  /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background: var(--mediumblue);
+        padding: 15px 0;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 4px;
+    }
+
+    .nav-links.show {
+        display: flex;  /* Show menu when toggled */
+        z-index: 999;
+    }
+}
+
+
