@@ -50,6 +50,15 @@ h3 {
 .bold {
     font-weight: 700;
 }
+
 .italic {
     font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(3, 11, 23, 0.3);
 }

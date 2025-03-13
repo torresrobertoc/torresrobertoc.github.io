@@ -10,6 +10,14 @@ header p {
     margin-bottom: 1rem;
 }
 
+
+img {
+    width: 100%;
+    margin: .25rem auto 1rem auto;
+    border-radius: 1.5rem;
+}
+
+
 /* individual writing page */
 main p {
     margin-bottom: 1.2rem;
@@ -68,7 +76,8 @@ blockquote {
     color: var(--mediumgray);
     margin-bottom: 1rem;
 }
-    
+
+/* styling the list-item number */
 ol {
     padding-left: 1.75rem;
     color: var(--mediumblue);
@@ -77,8 +86,22 @@ ol {
     font-family: 'Inconsolata', monospace;
 }
 
-ol h3 {
+ol.plain {
+    color: var(--darkgray);
+    font-weight: normal;
+    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+ol h3,
+ul h3 {
     color: var(--mediumblue);
+}
+
+ol ul {
+    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--darkgray);
+    font-weight: normal;
 }
 
 ol ol {
@@ -90,19 +113,23 @@ ol ol {
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 1rem;
+    padding-left: 1.75rem;
     font-size: 1rem;
 }
+
+ul li {
+    margin-top: .5rem;
+}
+
+ol.no-dots,
+ul.no-dots {
+    list-style-type: none;
+}
+
 
 li {
     margin-bottom: 1.2rem;
     line-height: 1.25em;
-}
-
-li.check,
-li.avoid {
-    margin-top: .75rem;
 }
 
 li.check::before {
@@ -118,4 +145,17 @@ li.avoid::before {
     color: var(--mediumgold);
     font-weight: bold;
     margin-right: 8px; /* Adds spacing */
+}
+
+.definition {
+    font-size: 1.1rem;;
+}
+
+.example {
+    font-style: italic;
+    color: var(--mediumgray);
+}
+
+img#IntuitiveUI {
+    max-width: 679px;
 }
