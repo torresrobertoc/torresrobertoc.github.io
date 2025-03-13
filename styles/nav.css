@@ -14,7 +14,7 @@
     width: 100%;
     transition: top 0.3s; /* Smooth hiding animation */
     z-index: 1000; /* Ensures it stays on top */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    box-shadow: 0 4px 5px rgba(3, 11, 23, 0.3);
 }
 
 .hidden {
@@ -31,7 +31,7 @@
     text-decoration: none;
     color: var(--mediumblue);
     font-family: 'Inconsolata', monospace;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(3, 11, 23, 0.5);
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
@@ -45,7 +45,7 @@
 }
 
 
-/* Desktop Menu */
+/* DESKTOP MENU */
 .nav-links {
     display: flex;
     gap: 30px;
@@ -62,7 +62,7 @@
     color: var(--mediumgold);
 }
 
-/* ==== MOBILE MENU ==== */
+/* MOBILE MENU */
 .menu-toggle {
     display: none;  /* Hidden by default */
     font-size: 1.8rem;
@@ -86,6 +86,7 @@
         padding: 15px 0;
         text-align: center;
         gap: 10px;
+        box-shadow: 0 4px 5px rgba(3, 11, 23, 0.3);
     }
 
     .nav-links a {

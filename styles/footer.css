@@ -1,17 +1,9 @@
 /* ==== FOOTER ==== */
 
 
-footer .links a {
-    color: var(--paleblue);
-    display: inline-block;
-    padding: 8px 8px 12px 8px;
-}
-
-
-
 footer {
     padding: 15px 20px 5px 20px;
-    background: var(--baseblue);
+    background: var(--black);
     color: white;
 }
 
@@ -28,6 +20,17 @@ footer {
     footer .links .right {
         text-align: right;
     }
+
+        footer .links a,
+        footer .links a:visited {
+            color: var(--mediumblue);
+            display: inline-block;
+            padding: 8px 8px 12px 8px;
+        }
+    
+        footer .links a:hover {
+            color: var(--paleblue);
+        }
 
     /* Ensure footer text is centered on small screens */
     footer .copy {

@@ -1,0 +1,121 @@
+header, main {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* individual writing page */
+main p {
+    margin-bottom: 1.2rem;
+}
+
+/* writings list page */
+main .item p {
+    margin-bottom: .25em;
+}
+
+/* changing the post headings because the longer titles are easier to read in Figtree. */
+h2 {
+    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h2, a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.item {
+    margin-bottom: 1.75rem;
+}
+
+.item > a {
+    font-family: 'Inconsolata', monospace;
+}
+
+.bottom-nav {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    margin: 1rem;
+}
+
+    .bottom-nav a {
+        display: inline-block;
+    }
+
+    .bottom-nav .left{
+        grid-column-start: 1;
+    }
+
+    .bottom-nav .right{
+        text-align: right;
+        grid-column-start: 3;
+    }
+
+    
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--paleblue);
+    padding-left: 16px;
+    margin-left: 0;
+    color: var(--mediumgray);
+    margin-bottom: 1rem;
+}
+    
+ol {
+    padding-left: 1.75rem;
+    color: var(--mediumblue);
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+ol h3 {
+    color: var(--mediumblue);
+}
+
+ol ol {
+    padding-left: 1.2rem; /* Indent second-level ordered lists */
+    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--darkgray);
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+li {
+    margin-bottom: 1.2rem;
+    line-height: 1.25em;
+}
+
+li.check,
+li.avoid {
+    margin-top: .75rem;
+}
+
+li.check::before {
+    content: "✔"; /* Unicode checkmark */
+    color: green;
+    font-weight: bold;
+    margin-right: 8px; /* Adds spacing */
+
+}
+
+li.avoid::before {
+    content: "❌";
+    color: var(--mediumgold);
+    font-weight: bold;
+    margin-right: 8px; /* Adds spacing */
+}

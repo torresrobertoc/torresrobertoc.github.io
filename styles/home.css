@@ -1,7 +1,6 @@
 
 /* ==== HERO ==== */
 header {
-    margin-top: 60px;
     text-align: center;
 }
 
@@ -48,7 +47,7 @@ header a.btn-primary {
 
 section {
     max-width: 90%;
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 2rem auto;
     text-align: center;
 }
     section h2 {
@@ -59,7 +58,11 @@ section {
 
     section h3 {
         text-align: left;
-        margin: 1rem 0 .20rem;
+        margin: .5rem 0 .20rem;
+    }
+
+    section h3 a {
+        padding-left: 0;
     }
 
     section img {
@@ -68,7 +71,7 @@ section {
     }
 
     section p {
-        padding: 4px 4px 8px 4px;
+        padding: 0px 4px 8px 4px;
         text-align: left;
     }
 
@@ -77,3 +80,7 @@ section {
         margin: .5em auto .75em auto;
         max-width: 300px;
     }
+
+.work-item {
+    margin-bottom: 1rem;
+}

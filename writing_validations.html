@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&display=swap&family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <title>RT's Portfolio - Roberto Torres</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/writings.css">
+</head>
+<body>
+    
+    <div id="navbar"></div> <!-- Navbar loads here -->
+
+    <header>
+        <h2><a class="blue" href="index.html">Home</a> > <a class="blue" href="writings.html">Writings</a> </h2>
+        <h1>Form Validations</h1>
+    </header>
+
+    <main>
+        <p class="post-meta">(Originally posted November 2016)</p>
+
+        <p>The most frustrating online experiences don't stem from clashing color schemes 
+            or overly verbose text, but instead from unfriendly or “unusable” form validations, 
+            notoriously from public sector websites and online banking. The validation of data 
+            is an essential part of software engineering yet prior to development, validation 
+            is rarely given more than a cursory glance, a mention, or worse yet - assumed to 
+            be implemented without further discussion.</p>
+        
+        <p>Error messages and notifications occur during moments that we have a user's most-focused
+            attention. From a user's perspective, they're in the middle of completing one of many
+            tasks. They expect to see confirmation of an action (like submitting/saving) when 
+            instead they are prompted with errors they didn't know existed. Right-away users start
+             feeling frustrated as they start trying to figure-out what they missed. As a user does
+              this, they are even more focused on the screen than they were a minute ago because 
+              they're trying to reconcile their expectations with what actually occurred. It is at 
+              this moment that the user is most “connected” to the software. We should embrace these
+               moments of “connection” and seize them as ways to make the best impression on the 
+               user. If we expect users to love our software, then when problems occur (like invalid
+                or missing data) we should be willing to do some “hand-holding” to get them through 
+                what could be a frustrating experience.</p>
+        
+        <p>Here are some tips for giving a best impression when validating form data:</p>
+        
+        <ol>
+            <li><h3>Make error messages clearly visible by...</h3>
+              <ol type="A">
+                <li>... not just relying on color
+                  <ul>
+                    <li class="avoid italic">Red text doesn't always work for color-blind users.</li>
+                  </ul>
+                </li>
+                <li>... using proximity
+                  <ul>
+                    <li class="check italic">Show the message close to the related field.</li>
+                  </ul>
+                </li>
+                <li>... adding an indicator
+                  <ul>
+                    <li class="check italic">E.g. an exclamation-marked triangle icon.</li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+            <li><h3>Make it easy for the user to correct the problem</h3>
+              <ol type="A">
+                <li class="avoid">Don't reset the form (blank-out fields) so users can fix typos instead of re-entering data.</li>
+              </ol>
+            </li>
+            <li><h3>Use clear, friendly language when communicating</h3>
+                <ol type="A">
+                    <li>Avoid accusatory language
+                        <ul>
+                            <li class="avoid italic">“You did it wrong”</li>
+                        </ul>
+                    </li>
+                    <li>Avoid vague or obvious messages
+                        <ul>
+                            <li class="avoid italic">“Something went wrong”</li>
+                        </ul>
+                    </li>
+                    <li>Explain why the data is wrong
+                        <ul>
+                            <li class="check italic">“Email addresses should contain a '@'”</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Don't display technical errors (a.k.a. exceptions)</h3>
+                <ol>
+                    <li class="avoid italic">“System.ArgumentNullException: Value cannot be null.”</li>
+                </ol>
+            </li>
+          </ol>
+          <p>We have the ability to make that moment the most frustrating interaction or the most pleasant 
+            by how we execute the validation and communicate the errors to the user. Do you agree? Have 
+            you thought about how error messages can affect a user's mood? Do you have any tips you'd like 
+            to share?</p>
+    </main>
+
+    <div class="bottom-nav">
+        <a class="gold left" href="writings.html">
+            <span class="bold">Back&nbsp;to</span>
+            <span class="italic">Writings</span></a>
+        <a class="gold right" href="writing_interviews.html">
+            <span class="bold">Next&nbsp;Read:</span><br/>
+            <span class="italic">Contextual Interview Tips</span>
+        </a>
+    </div>
+
+    <div id="footer"></div> <!-- Footer loads here -->
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -52,7 +52,8 @@ a[target="_blank"]::after {
     text-decoration: none;
 }
 
-a.gold {
+a.gold,
+a.gold:visited {
     color: var(--basegold);
 }
 
@@ -60,7 +61,8 @@ a.gold {
         color: var(--mediumblue);
     }
 
-a.blue {
+a.blue,
+a.blue:visited {
     color: var(--mediumblue);
 }
 
@@ -68,4 +70,11 @@ a.blue {
         color: var(--basegold);
     }
     
+
+@media (max-width: 768px) {
     
+    /* Ensure targets are at least 44px for the base sized (16px) font*/
+    a {
+        padding: 13px;
+    }
+}
