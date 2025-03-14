@@ -74,7 +74,7 @@ section {
         }
 
     section p {
-        padding: 0px 4px 8px 4px;
+        padding: 0 4px 8px 0;
         text-align: left;
     }
 
@@ -84,6 +84,11 @@ section {
         max-width: 300px;
     }
 
-.work-item {
+.item {
     margin-bottom: 1rem;
+    text-align: left;
+}
+
+.item a {
+    font-family: 'Inconsolata', monospace;
 }
