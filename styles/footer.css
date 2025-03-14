@@ -23,7 +23,7 @@ footer {
 
         footer .links a,
         footer .links a:visited {
-            color: var(--mediumblue);
+            color: var(--lightblue);
             display: inline-block;
             padding: 8px 8px 12px 8px;
         }

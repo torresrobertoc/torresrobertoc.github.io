@@ -14,7 +14,8 @@
 
 /* Primary Buttons */
 .btn-primary {
-    background: linear-gradient(175deg, var(--palegold) 0%, var(--mediumgold) 50%);
+    background: linear-gradient(177deg, var(--palegold) 0%, var(--mediumgold) 70%);
+    border: 1px solid var(--basegold);
 }
 
 .btn-primary:hover {
@@ -24,13 +25,22 @@
 
 /* Secondary Buttons */
 .btn-secondary {
-    background: linear-gradient(175deg, white 0%, var(--paleblue) 50%);
-    border: 1px solid var(--paleblue);
+    background: linear-gradient(177deg, white 0%, var(--paleblue) 70%);
+    border: 1px solid var(--lightblue);
 }
 
 .btn-secondary:hover {
     background: var(--paleblue);
     filter: none;
+}
+
+/* External Link Icon */
+a[target="_blank"]::after {
+    content: "open_in_new";
+    margin-left: 4px;
+    font-family: "Material Symbols Outlined";
+    font-size: .8rem;
+    text-decoration: none;
 }
 
 /* Links */
@@ -40,16 +50,6 @@ a[href$=".pdf"]::after {
     font-size: 1em;
     margin-left: 5px;
     vertical-align: middle;
-}
-
-
-/* External Link Icon */
-a[target="_blank"]::after {
-    content: "open_in_new";
-    margin-left: 4px;
-    font-family: "Material Symbols Outlined";
-    font-size: .8rem;
-    text-decoration: none;
 }
 
 a.gold,
