@@ -75,6 +75,6 @@ a.blue:visited {
     
     /* Ensure targets are at least 44px for the base sized (16px) font*/
     a {
-        padding: 13px;
+        padding: 13px 0;
     }
 }

@@ -35,16 +35,13 @@ h2 {
     font-weight: 700;
 }
 
-h2, a {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .item {
     margin-bottom: 1.75rem;
 }
 
-.item > a {
+.item h2,
+.item a {
+    padding-left: 0;
     font-family: 'Inconsolata', monospace;
 }
 
