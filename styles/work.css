@@ -51,25 +51,7 @@ section {
     .item a {
         display: inline-block;
         font-weight: 700;
-        margin-top: -8px;
         font-family: 'Inconsolata', monospace;
-    }
-
-    .item .case-link {
-        text-align: center;
-    }
-
-    .item .rwd-links {
-        display: grid;
-        grid-template-columns: auto max-content 3rem max-content auto;
-    }
-
-    .item .rwd-links .left {
-        grid-column-start: 2;
-    }
-
-    .item .rwd-links .right {
-        grid-column-start: 4;
     }
 
 .no-shadow {
