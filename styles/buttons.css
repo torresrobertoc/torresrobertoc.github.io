@@ -61,6 +61,14 @@ a.gold:visited {
         color: var(--mediumblue);
     }
 
+a.darkgold,
+a.darkgold:visited {
+    color: var(--darkgold);
+}
+    a.darkgold:hover {
+        color: var(--mediumblue);
+    }
+
 a.blue,
 a.blue:visited {
     color: var(--mediumblue);
