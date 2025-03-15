@@ -26,15 +26,6 @@ index.html  # Main homepage
 script.js   # JavaScript for interactivity  
 ```
 
-## **Installation & Development**  
-To work on this project locally:  
-1. Clone the repository:  
-   ```
-   git clone https://github.com/torresrobertoc/torresrobertoc.github.io.git
-   ```
-2. Open the project in **VS Code** or another editor.  
-3. Start a local server using **Live Server** extension.  
-
 ## **Contributions & Issues**  
 This is a personal project, but feedback is always welcome! If you spot an issue, feel free to open one in the GitHub **Issues** tab.
 
