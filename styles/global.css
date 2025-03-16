@@ -1,18 +1,18 @@
 /* ==== GLOBAL ==== */
 :root {
-    --darkblue: #122952;
+    --darkblue: #0B1A33;
     --baseblue: #203D6E;
-    --mediumblue: #3E619E;
-    --lightblue: #6895E3;
+    --lightblue: #5589E2;
     --paleblue: #CCDFFF;
-    --darkgold: #A8741B;
-    --basegold: #C28F38;
-    --mediumgold: #E8B661;
-    --palegold: #FFECCC;
-    --black: #030A17;
+    --darkgold: #664713;
+    --basegold: #B08233;
+    --lightgold: #FCC465;
+    --palegold: #FFF1CC;
+    --black: #030B17;
     --darkgray: #25282D;
-    --mediumgray: #404245;
-    --lightgray: #9DA5B2;
+    --basegray: #404245;
+    --lightgray: #7C8698;
+    --palegray: #E5E5E5;
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,13 +43,12 @@ h3 {
     font-size: 1.25rem;
 }
 
-.post-meta {
+.subtle {
     font-size: 0.9em;
     font-style: italic;
-    color: var(--mediumgray);
+    color: var(--lightgray);
     display: block;
-    margin-bottom: 4px;
-    text-align: left;
+    /*text-align: left;*/
 }
 
 .bold {

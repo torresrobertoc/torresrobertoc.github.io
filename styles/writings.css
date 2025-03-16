@@ -70,14 +70,14 @@ blockquote {
     border-left: 4px solid var(--paleblue);
     padding-left: 16px;
     margin-left: 0;
-    color: var(--mediumgray);
+    color: var(--baselinegray);
     margin-bottom: 1rem;
 }
 
 /* styling the list-item number */
 ol {
     padding-left: 1.75rem;
-    color: var(--mediumblue);
+    color: var(--baseblue);
     font-weight: 900;
     font-size: 1.25rem;
     font-family: 'Inconsolata', monospace;
@@ -92,7 +92,7 @@ ol.plain {
 
 ol h3,
 ul h3 {
-    color: var(--mediumblue);
+    color: var(--baseblue);
 }
 
 ol ul {
@@ -139,7 +139,7 @@ li.check::before {
 
 li.avoid::before {
     content: "❌";
-    color: var(--mediumgold);
+    color: var(--lightgold);
     font-weight: bold;
     margin-right: 8px; /* Adds spacing */
 }
@@ -150,7 +150,7 @@ li.avoid::before {
 
 .example {
     font-style: italic;
-    color: var(--mediumgray);
+    color: var(--baselinegray);
 }
 
 img#IntuitiveUI {

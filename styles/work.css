@@ -16,11 +16,19 @@ section {
 }
 
     section#case-studies {
-        background-color: rgba(204, 223, 255, 50%);
+        background-color: rgba(255, 241, 204, 50%);
     }
 
+        section#case-studies h2 {
+            font-size: 1.75rem;
+        }
+
+        section#case-studies .subtle {
+            text-align: center;
+        }
+
     section#rwd-projects {
-        background-color: rgba(255, 241, 204, 50%);
+        background-color: rgba(204, 223, 255, 50%);
     }
 
     section h2 {

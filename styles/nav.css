@@ -29,7 +29,7 @@
 
 #logo a {
     text-decoration: none;
-    color: var(--mediumblue);
+    color: var(--lightblue);
     font-family: 'Inconsolata', monospace;
     text-shadow: 0px 4px 4px rgba(3, 11, 23, 0.5);
     font-size: 40px;
@@ -41,7 +41,7 @@
 #logo a:hover {
     text-shadow: none;
     text-decoration: underline;
-    color: var(--mediumgold);
+    color: var(--lightgold);
 }
 
 
@@ -59,7 +59,7 @@
 
 .nav-links a:hover {
     text-decoration: underline;
-    color: var(--mediumgold);
+    color: var(--lightold);
 }
 
 /* MOBILE MENU */
@@ -82,7 +82,7 @@
         top: 55px;
         left: 0;
         width: 100%;
-        background: var(--mediumblue);
+        background: var(--lightblue);
         padding: 15px 0;
         text-align: center;
         gap: 10px;
