@@ -10,6 +10,7 @@ header img {
     margin-top: 20px;
     max-width: 288px;
     transform: rotatey(180deg);
+    text-align: center;
 }
 
 header h1 {
@@ -26,7 +27,6 @@ header h2 {
 }
 
 header p {
-    text-align: left;
     width: 90%;
     margin: auto;
     padding: .5em;
@@ -44,13 +44,14 @@ header a.btn-primary {
 /* ==== END HERO ==== */
 
 section {
-    max-width: 90%;
+    width: 100%;
     margin: 2rem auto 2rem auto;
     text-align: center;
+    padding: 4% 6% 4% 6%;
 }
     section h2 {
         text-align: left;
-        margin: 2rem 0 .25rem;
+        margin: 0 0 .25rem 0;
         padding: 0;
     }
 
@@ -59,9 +60,9 @@ section {
         margin: .5rem 0 .20rem;
     }
 
-    section h3 a {
-        padding-left: 0;
-    }
+        section h3 a {
+            padding-left: 0;
+        }
 
     section img {
         width: 100%;
@@ -82,6 +83,10 @@ section {
         max-width: 300px;
     }
 
+section#Featured {
+    background-color: var(--palegold);
+}
+
 .item {
     margin-bottom: 1rem;
     text-align: left;
@@ -89,4 +94,52 @@ section {
 
 .item a {
     font-family: 'Inconsolata', monospace;
+}
+
+
+/* Styles for desktop */
+@media (min-width: 1024px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 10% 5% 5% 5%;
+    }
+    
+    header img {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin: auto;
+    }
+
+    header div {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    /*
+    header h1 {
+        grid-row-start: 1;
+        grid-column-start: 2
+    }
+
+    header h2 {
+        grid-row-start: 2;
+        grid-column-start: 2
+    }
+
+    header p {
+        grid-row-start: 3;
+        grid-column-start: 2
+    }
+
+    header a.btn-primary {
+        grid-row-start: 4;
+        grid-column-start: 2
+    }
+
+    header > a {
+        grid-row-start: 5;
+        grid-column-start: 2
+    }
+*/
 }

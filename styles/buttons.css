@@ -87,3 +87,10 @@ a.blue:visited {
         padding: 13px 0;
     }
 }
+
+@media (min-width: 769px) {
+    
+    a {
+        margin: 13px 0;
+    }
+}
