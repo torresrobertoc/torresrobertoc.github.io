@@ -28,13 +28,6 @@ main .item p {
     margin-bottom: .25em;
 }
 
-/* changing the post headings because the longer titles are easier to read in Figtree. */
-h2 {
-    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
 .item {
     margin-bottom: 1.75rem;
 }
@@ -42,7 +35,6 @@ h2 {
 .item h2,
 .item a {
     padding-left: 0;
-    font-family: 'Inconsolata', monospace;
 }
 
 .bottom-nav {
@@ -80,13 +72,13 @@ ol {
     color: var(--baseblue);
     font-weight: 900;
     font-size: 1.25rem;
-    font-family: 'Inconsolata', monospace;
+    font-family: var(--titlefont);
 }
 
 ol.plain {
     color: var(--darkgray);
     font-weight: normal;
-    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--bodyfont);
     font-size: 1rem;
 }
 
@@ -96,14 +88,14 @@ ul h3 {
 }
 
 ol ul {
-    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--bodyfont);
     color: var(--darkgray);
     font-weight: normal;
 }
 
 ol ol {
     padding-left: 1.2rem; /* Indent second-level ordered lists */
-    font-family: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--bodyfont);
     color: var(--darkgray);
     font-weight: normal;
     font-size: 1.1rem;

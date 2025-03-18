@@ -93,7 +93,7 @@ section#Featured {
 }
 
 .item a {
-    font-family: 'Inconsolata', monospace;
+    font-family: var(--titlefont);
 }
 
 
@@ -116,30 +116,31 @@ section#Featured {
         grid-row-start: 1;
         grid-column-start: 2;
     }
-    /*
-    header h1 {
+
+    section#Featured .item {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#Featured .item h3 {
         grid-row-start: 1;
-        grid-column-start: 2
+        grid-column-start: 1;
     }
 
-    header h2 {
-        grid-row-start: 2;
-        grid-column-start: 2
-    }
-
-    header p {
+    section#Featured .item img {
         grid-row-start: 3;
-        grid-column-start: 2
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
-    header a.btn-primary {
-        grid-row-start: 4;
-        grid-column-start: 2
+    section#Featured .item p {
+        grid-row-start: 1;
+        grid-column-start: 2;
     }
 
-    header > a {
-        grid-row-start: 5;
-        grid-column-start: 2
+    section#Featured .item a {
+        grid-row-start: 2;
+        grid-column-start: 1;
     }
-*/
 }

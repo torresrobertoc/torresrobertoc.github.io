@@ -6,7 +6,7 @@
     padding: 8px 20px 8px 14px;
     background: var(--baseblue);
     color: white;
-    font-family: 'Inconsolata', monospace;
+    font-family: var(--titlefont);
     font-weight: bold;
 
     position: fixed;
@@ -30,7 +30,7 @@
 #logo a {
     text-decoration: none;
     color: var(--lightblue);
-    font-family: 'Inconsolata', monospace;
+    font-family: var(--titlefont);
     text-shadow: 0px 4px 4px rgba(3, 11, 23, 0.5);
     font-size: 40px;
     font-style: normal;

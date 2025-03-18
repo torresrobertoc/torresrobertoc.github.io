@@ -58,8 +58,8 @@ section {
 
     .item a {
         display: inline-block;
-        font-weight: 700;
-        font-family: 'Inconsolata', monospace;
+        font-weight: 600;
+        font-family: var(--titlefont);
     }
 
 .no-shadow {
