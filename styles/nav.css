@@ -73,6 +73,7 @@
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Show hamburger icon */
+        padding: 0 12px;
     }
 
     .nav-links {
@@ -117,6 +118,15 @@
     
     #logo a::after {
         content: "Roberto Torres";
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
     }
 }
 
