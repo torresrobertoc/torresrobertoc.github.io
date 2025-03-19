@@ -20,6 +20,14 @@ function toggleMenu() {
 let lastScroll = 0;
 window.addEventListener("scroll", () => {
     let currentScroll = window.pageYOffset;
-    document.querySelector(".navbar").classList.toggle("hidden", currentScroll > lastScroll);
+    let navbar = document.querySelector(".navbar");
+    
+    if (currentScroll === 0) {
+        navbar.classList.remove("hidden");
+    }
+    else {
+        navbar.classList.toggle("hidden", currentScroll > lastScroll);
+    }
+
     lastScroll = currentScroll;
 });
