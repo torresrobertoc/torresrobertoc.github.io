@@ -51,7 +51,7 @@ body {
 }
 
 header {
-    margin-top: 70px;  /* make room for navbar */
+    padding-top: 70px;  /* make room for navbar */
 }
 
 .subtle {

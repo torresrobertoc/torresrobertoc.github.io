@@ -35,9 +35,8 @@ header a.btn-primary {
 
 section {
     width: 100%;
-    margin: 2rem auto 2rem auto;
     text-align: center;
-    padding: 4% 6% 4% 6%;
+    padding: 1% 6% 4% 6%;
 }
     section h2 {
         text-align: left;
@@ -72,7 +71,7 @@ section {
         max-width: 300px;
     }
 
-section#Featured {
+section#FeaturedWork {
     background-color: var(--palegold);
 }
 
@@ -91,6 +90,7 @@ section#Featured {
     header {
         display: grid;
         grid-template-columns: 2fr 3fr;
+        gap: 40px;
         align-items: center;
         margin: 10% 5% 5% 5%;
     }
@@ -108,30 +108,29 @@ section#Featured {
         grid-column-start: 2;
     }
 
-    section#Featured .item {
+    #Support {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: stretch;
     }
 
-    section#Featured .item h3 {
-        grid-row-start: 1;
-        grid-column-start: 1;
+    #Support #FeaturedWriting,
+    #Support #FeaturedCoding {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    section#Featured .item img {
-        grid-row-start: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
+    #FeaturedWriting .btn-secondary,
+    #FeaturedCoding .btn-secondary {
+        align-self: flex-start;
+        margin-top: auto;
     }
 
-    section#Featured .item p {
-        grid-row-start: 1;
-        grid-column-start: 2;
+    #Support img {
+        width: 100%;
+        border-radius: 6px;
     }
 
-    section#Featured .item a {
-        grid-row-start: 2;
-        grid-column-start: 1;
-    }
 }

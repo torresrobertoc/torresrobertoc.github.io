@@ -2,6 +2,7 @@
 
 
 footer {
+    margin-top: 2rem;
     padding: 15px 20px 20px 20px;
     background: var(--black);
     color: white;
