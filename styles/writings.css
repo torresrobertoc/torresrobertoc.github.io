@@ -6,7 +6,7 @@ header, main {
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: var(--largerbodysize);
     margin-bottom: 1rem;
 }
 
@@ -72,7 +72,6 @@ ol {
     padding-left: 1.75rem;
     color: var(--baseblue);
     font-weight: 900;
-    font-size: 1.25rem;
     font-family: var(--titlefont);
 }
 
@@ -80,12 +79,23 @@ ol.plain {
     color: var(--darkgray);
     font-weight: normal;
     font-family: var(--bodyfont);
-    font-size: 1rem;
+    font-size: var(--largerbodysize);
 }
 
-ol h3,
-ul h3 {
-    color: var(--baseblue);
+ol.h3,
+ul.h3 {
+    font-family: var(--titlefont);
+    font-size: var(--h3size);
+    font-weight: 500;
+}
+
+ol.h3 span,
+ul.h3 span {
+    font-size: var(--bodysize);
+}
+
+li h3 {
+    margin: 0;
 }
 
 ol ul {
@@ -99,12 +109,12 @@ ol ol {
     font-family: var(--bodyfont);
     color: var(--darkgray);
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: var(--largerbodysize);
 }
 
 ul {
     padding-left: 1.75rem;
-    font-size: 1rem;
+    font-size: var(--bodysize);
 }
 
 ul li {
@@ -116,10 +126,8 @@ ul.no-dots {
     list-style-type: none;
 }
 
-
 li {
     margin-bottom: 1.2rem;
-    line-height: 1.25em;
 }
 
 li.check::before {
@@ -138,8 +146,8 @@ li.avoid::before {
 }
 
 .definition {
-    font-size: 1.1rem;;
-}
+    font-size: var(--largerbodysize) !important;
+} 
 
 .example {
     font-style: italic;
