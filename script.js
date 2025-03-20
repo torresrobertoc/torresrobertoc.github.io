@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent("component_navbar.html", "#navbar");
-    loadComponent("component_footer.html", "#footer");
+    loadComponent("component_navbar.html", "#NavBar");
+    loadComponent("component_footer.html", "#Footer");
 });
 
 function loadComponent(url, selector) {
@@ -31,3 +31,16 @@ window.addEventListener("scroll", () => {
 
     lastScroll = currentScroll;
 });
+
+
+function updateNavbarHeight() {
+    const navbar = document.querySelector(".navbar"); // Select the navbar element
+    if (navbar) {
+        let navbarHeight = navbar.offsetHeight; // Get the actual height
+        document.documentElement.style.setProperty("--navbarHeight", navbarHeight + "px");
+    }
+}
+
+// Run when the page loads and when window resizes
+window.addEventListener("load", updateNavbarHeight);
+window.addEventListener("resize", updateNavbarHeight);

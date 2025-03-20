@@ -13,119 +13,136 @@
 </head>
 <body>
     
-    <div id="navbar"></div> <!-- Navbar loads here -->
+    <div id="NavBar"></div> <!-- Navbar loads here -->
+    <noscript>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="writings.html">Writings</a>
+        </nav>
+    </noscript>
 
-    <header>
-        <h2><a class="blue" href="index.html">Home</a> > <a class="blue" href="writings.html">Writings</a> </h2>
-        <h1>Likeable Software</h1>
-    </header>
+    <div id="Container">
+        <nav aria-label="Breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="writings.html">Writings</a></li>
+                <li aria-current="page">Likeable Software</li>
+            </ul>
+        </nav>
 
-    <main>
-        <p class="subtle">(Originally posted August 2016)<p>
 
-        <p>To this day, my favorite software-related quote rings true:</p>
+        <header>
+            <h1>Likeable Software</h1>
+            <p class="subtle">(Originally posted August 2016)<p></p>
+        </header>
+
+        <main>
+            <p>To this day, my favorite software-related quote rings true:</p>
 
 
-        <blockquote>“If we want users to like our software we should design it to behave like 
-            a likeable person: respectful, generous and helpful.”  - Alan Cooper 
-            (author of The Inmates are Running the Asylum)</blockquote>
-        
-        
-        <p>Like so many truths, this seems obvious enough until you start to deconstruct
-            its meaning. The first time I read this, I asked myself: Is it possible to 
-            make software like a person? If so, how do those “likeable” traits translate
-            to software?
-        </p>
-        
-        <p>It's no secret that software has become an increasingly larger part of our 
-            everyday lives. We rely on our phones, vehicles and appliances to interact 
-            with us in more ways than ever before. As we continue making software that 
-            integrates with our personal lives, we tend to develop feelings (whether 
-            positive or negative) to our smart devices. For instance, have you ever 
-            had a customer service representative complain about their computer “acting
-             up” or being “in one of its moods”? Do you know someone that “loves” their 
-             car because of some helpful features? It is human nature to anthropomorphize
-              the things we interact with on a regular basis, therefore it is possible to 
-              make software like a person because of how we end up relating to it.
-        </p>
-        
-        <p>So, how do we make likeable software? “Likeability” is such a vague & complex 
-            concept for something as finite as software that we have to start with the 
-            idea of it being more of a guiding principle than a discrete step. Once we 
-            have that in our heads, we have to focus on the touchpoints our software has 
-            with users in order to seem “likeable”.
-        </p>
+            <blockquote>“If we want users to like our software we should design it to behave like 
+                a likeable person: respectful, generous and helpful.”  - Alan Cooper 
+                (author of The Inmates are Running the Asylum)</blockquote>
+            
+            
+            <p>Like so many truths, this seems obvious enough until you start to deconstruct
+                its meaning. The first time I read this, I asked myself: Is it possible to 
+                make software like a person? If so, how do those “likeable” traits translate
+                to software?
+            </p>
+            
+            <p>It's no secret that software has become an increasingly larger part of our 
+                everyday lives. We rely on our phones, vehicles and appliances to interact 
+                with us in more ways than ever before. As we continue making software that 
+                integrates with our personal lives, we tend to develop feelings (whether 
+                positive or negative) to our smart devices. For instance, have you ever 
+                had a customer service representative complain about their computer “acting
+                up” or being “in one of its moods”? Do you know someone that “loves” their 
+                car because of some helpful features? It is human nature to anthropomorphize
+                the things we interact with on a regular basis, therefore it is possible to 
+                make software like a person because of how we end up relating to it.
+            </p>
+            
+            <p>So, how do we make likeable software? “Likeability” is such a vague & complex 
+                concept for something as finite as software that we have to start with the 
+                idea of it being more of a guiding principle than a discrete step. Once we 
+                have that in our heads, we have to focus on the touchpoints our software has 
+                with users in order to seem “likeable”.
+            </p>
 
-        <p>Here thus, is what I think likeable 
-            software would resemble at different touchpoints according to the traits of 
-            a likeable person:
-        </p>
-        
-        <ol class="h3">
-            <li>
-                <h3>Respectful:</h3>
-                <ol type="a">
-                    <li>The software respects a user's time by getting right to the point.
-                        <ul class="no-dots">
-                            <li class="check">Use progressive disclosure to minimize the amount of information users see until they truly need it. </li>
-                        </ul>
-                    </li>
-                    <li>The software respects a user's point of view by communicating via their lexicon.
-                        <ul class="no-dots">
-                            <li class="check">Don't use terms that your users might not be familiar with.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </li>
+            <p>Here thus, is what I think likeable 
+                software would resemble at different touchpoints according to the traits of 
+                a likeable person:
+            </p>
+            
+            <ol class="h3">
+                <li>
+                    <h3>Respectful:</h3>
+                    <ol type="a">
+                        <li>The software respects a user's time by getting right to the point.
+                            <ul class="no-dots">
+                                <li class="check">Use progressive disclosure to minimize the amount of information users see until they truly need it. </li>
+                            </ul>
+                        </li>
+                        <li>The software respects a user's point of view by communicating via their lexicon.
+                            <ul class="no-dots">
+                                <li class="check">Don't use terms that your users might not be familiar with.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
 
-            <li>
-                <h3>Generous:</h3>
-                <ol type="a">
-                    <li>The software is generous with the actions a user can take to recover from mistakes.
-                        <ul class="no-dots">
-                            <li class="check">Make it easy for users to undo actions.</li>
-                        </ul>
-                    </li>
-                    <li>The software is generous with system data by telling users where it stands.
-                        <ul class="no-dots">
-                            <li class="check">Make status information readily available.</li>
-                        </ul>
-                    </li>
+                <li>
+                    <h3>Generous:</h3>
+                    <ol type="a">
+                        <li>The software is generous with the actions a user can take to recover from mistakes.
+                            <ul class="no-dots">
+                                <li class="check">Make it easy for users to undo actions.</li>
+                            </ul>
+                        </li>
+                        <li>The software is generous with system data by telling users where it stands.
+                            <ul class="no-dots">
+                                <li class="check">Make status information readily available.</li>
+                            </ul>
+                        </li>
 
-                </ol>
-            </li>
+                    </ol>
+                </li>
 
-            <li>
-                <h3>Helpful:</h3>
-                <ol type="a">
-                    <li>The software helps users learn about the system so they can be more efficient.
-                        <ul class="no-dots">
-                            <li class="check">Give tips liberally without interrupting a user's flow.</li>
-                        </ul>
-                    </li>
-                    <li>The software helps by explaining why errors occurred using language most familiar to the user.
-                        <ul class="no-dots">
-                            <li class="check">Avoid error messages that describe technical problems from the underlying code.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </li>
-        </ol>
-        
-        <p></p>
-    </main>
+                <li>
+                    <h3>Helpful:</h3>
+                    <ol type="a">
+                        <li>The software helps users learn about the system so they can be more efficient.
+                            <ul class="no-dots">
+                                <li class="check">Give tips liberally without interrupting a user's flow.</li>
+                            </ul>
+                        </li>
+                        <li>The software helps by explaining why errors occurred using language most familiar to the user.
+                            <ul class="no-dots">
+                                <li class="check">Avoid error messages that describe technical problems from the underlying code.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            
+            <p></p>
+        </main>
 
-    <div class="bottom-nav">
-        <a class="gold left" href="writings.html">
-            <span class="bold">Back&nbsp;to</span>
-            <span class="italic">Writings</span></a>
-        <a class="gold right" href="writing_interviews.html">
-            <span class="bold">Next&nbsp;Read:</span><br/>
-            <span class="italic">Form&nbsp;Validations</span>
-        </a>
+        <div class="bottom-nav">
+            <a class="gold left" href="writings.html">
+                <span class="bold">Back&nbsp;to</span>
+                <span class="italic">Writings</span></a>
+            <a class="gold right" href="writing_validations.html">
+                <span class="bold">Next&nbsp;Read:</span><br/>
+                <span class="italic">Form&nbsp;Validations</span>
+            </a>
+        </div>
     </div>
-
-    <div id="footer"></div> <!-- Footer loads here -->
+    <div id="Footer"></div> <!-- Footer loads here -->
+    <noscript>
+        <p class="copy">© 2025 Roberto Torres. All Rights Reserved.</p>
+    </noscript>
 
     <script src="script.js"></script>
 </body>
