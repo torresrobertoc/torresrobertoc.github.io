@@ -2,15 +2,15 @@
 /* ==== HERO ==== */
 header {
     text-align: center;
-    padding: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 2em;
 }
 
-header img {
+header img#Profile {
     border-radius: 15%;
-    width: 50%;
     margin: 20px auto 12px auto;
     max-width: 288px;
-    transform: rotatey(180deg);
     text-align: center;
 }
 
@@ -19,16 +19,30 @@ header p {
     margin: auto;
     padding: .5em;
     font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 header a {
     display: block;
 }
 
-header a.btn-primary {
-    width: 70%;
+header a.btn {
+    width: 80%;
     max-width: 300px;
+}
+
+header ul.metrics {
+    text-align: left;
+    width: 85%;
+    padding-top: .25em;
+    margin: auto;
+    color: var(--basegray);
+    font-style: italic;
+}
+
+header ul.metrics li {
+    line-height: 1;
+    margin-bottom: .6em;
 }
 
 /* ==== END HERO ==== */
@@ -85,6 +99,49 @@ section#FeaturedWork {
 }
 
 
+.flat   {
+    box-shadow: none;
+}
+
+/* MOBILE */
+@media (max-width: 680px) {
+
+    header img#Profile {
+        width: 55%
+    }
+    
+    header div.company-logos img {
+        width: 40%;
+        margin: 5% 4% 5% 4%;
+    }
+    
+}
+
+/* Transition to TABLET */
+@media (min-width: 680px) {
+
+    header img#Profile {
+        width: 30%
+    }
+
+    header a.btn {
+        width: 35%;
+        margin-left: 8px;
+        margin-right: 8px;
+        max-width: 300px;
+    }
+
+    header div.company-logos img {
+        margin: 2% 3% 4% 3%;
+        width: 26%;
+    }
+
+    header ul.metrics { 
+        width: 60%;
+    }
+}
+
+
 /* Styles for desktop */
 @media (min-width: 1024px) {
     header {
@@ -98,9 +155,6 @@ section#FeaturedWork {
     header img {
         grid-row-start: 1;
         grid-column-start: 1;
-        margin: auto;
-        width: 100%;
-        max-width: 300px;
     }
 
     header div {

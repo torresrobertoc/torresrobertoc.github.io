@@ -64,6 +64,7 @@ blockquote {
     margin-left: 0;
     color: var(--baselinegray);
     margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 /* styling the list-item number */
