@@ -1,0 +1,106 @@
+section ul {
+    margin-left: 1.5em;
+}
+
+h2 {
+    margin-top: 1.25em;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: .5em;
+}
+
+.tldr {
+    background-color: var(--paleblue);
+    padding: .5em 1em 1em 1em;
+    border-radius: .75em;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.tldr h4 {
+    margin: 0;
+}
+
+
+.lightbox img {
+    cursor: zoom-in;
+    max-width: 100%;
+    transition: 0.3s ease;
+}
+  
+    #lightbox-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+  
+    #lightbox-overlay img {
+        max-width: 90vw;
+        max-height: 90vh;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+.component-example h3 {
+    margin-top: .75em;
+}
+
+.component-layout{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.component-image {
+    margin: 1rem 0;
+    text-align: center;
+}
+  
+.component-image img {
+    max-width: 100%;
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+}
+
+pre {
+    background-color: var(--black);
+    margin: 0;
+    padding: 0 1.5em;
+    width: fit-content;
+}
+  
+code {
+    color: white;
+    font-family: var(--monofont);
+}
+
+.component-code {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.code-caption {
+    font-size: 0.85rem;
+    color: var(--basegray);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .component-layout {
+        flex-direction: column;
+    }
+}

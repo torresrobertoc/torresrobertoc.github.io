@@ -44,3 +44,17 @@ function updateNavbarHeight() {
 // Run when the page loads and when window resizes
 window.addEventListener("load", updateNavbarHeight);
 window.addEventListener("resize", updateNavbarHeight);
+
+// Lightbox Impolementation
+document.querySelectorAll('.lightbox').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const imgSrc = link.getAttribute('href');
+      const overlay = document.createElement('div');
+      overlay.id = 'lightbox-overlay';
+      overlay.innerHTML = `<img src="${imgSrc}" alt="Expanded view">`;
+      overlay.addEventListener('click', () => overlay.remove());
+      document.body.appendChild(overlay);
+    });
+  });
+  

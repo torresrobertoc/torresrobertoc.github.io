@@ -9,7 +9,7 @@
     
     <title>Case Study: Design System | RT's Portfolio | Roberto Torres</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/case.css">
 </head>
 <body>
     
@@ -27,9 +27,154 @@
         
         <header>
             <h1><span class="unbold block">Case Study:</span> Atomic Design System</h1>
+            
+            <div class="tldr">
+                <h4>TL;DR</h4>
+                I led the transition from a Silverlight (XAML) UI to a modern, scalable HTML/CSS-based UI framework.
+                To support this shift, I built an Atomic Design System that ensured enterprise-wide UI consistency, 
+                reduced UI development time by 30%, and streamlined developer onboarding for the new Single-Page Architectures (SPA).
+            </div>
         </header>
 
+        <section>
+            <h2>The Challenge:</h2>
+            <h3>Modernizing an Outdated UI Stack</h3>
 
+            <h4>Context:</h4>
+            <ul>
+                <li>The LoanSphere (formerly Fusion/Rincon) platform was transitioning away from Silverlight/XAML to a modern tech stack.</li>
+                <li>UI inconsistency was a major blocker—each team designed their own components, causing visual fragmentation and higher dev effort.</li>
+                <li>Accessibility (WCAG compliance) was not prioritized.</li>
+                <li>UI scalability was not planned, making the applications hard to maintain.</li>
+            </ul>
+
+            <h4>Constraints:</h4>
+            <ul>
+                <li>Teams were implementing different frameworks (React, Angular), so the system needed to be technology-agnostic, ensuring long-term viability and widespread adoptability. </li>
+            </ul>
+        </section>
+        <section>
+            <h2>My Role & Responsibilities</h2>
+            <p>I played a foundational role in shaping the UI strategy for LoanSphere's transition to a modern stack, leveraging my expertise in UX, front-end development, and system design.</p>
+            <ol class="h3">
+
+                <li><h3>Architectural Collaboration &amp; Strategy</h3>
+                    <ul>
+                        <li>Engaged with architects, developers, and leadership to determine the best approach for modernizing the UI.</li>
+                        <li>Advised on UI framework options (React, Angular), helping transition from Silverlight (XAML) to HTML, CSS, and JavaScript.</li>
+                        <li>Built a browser-rendered, scalable system to ensure adaptability across evolving technology stacks.</li>
+                    </ul>
+                </li>
+
+                <li><h3>Design System Development</h3>
+                    <ul>
+                        <li>Established Atomic Design Principles to create consistent, reusable UI components.</li>
+                        <li>Developed UI libraries using HTML, CSS, and jQuery, ensuring rapid implementation across projects.</li>
+                        <li>Created a centralized documentation hub with developer notes and implementation guidelines.</li>
+                    </ul>
+                </li>
+
+                <li><h3>Developer Support &amp; System Evangelism</h3>
+                    <ul>
+                        <li>Provided hands-on UI development support, guiding teams in adopting and implementing components.</li>
+                        <li>Delivered training workshops and presented at virtual meetups to drive system adoption.</li>
+                        <li>Maintained an iterative feedback loop, refining UI components based on real-world usage.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>The Solution:</h2>
+            <h3>A Modular, Scalable Design System</h3>
+            <ul>
+                <li><strong>Atomic Design Framework</strong> → Broke UI into Atoms, Molecules, and Organisms, ensuring consistency & scalability.</li>
+                <li><strong>Component Library</strong> → Built reusable UI elements (buttons, forms, navigation, layouts) for faster development.</li>
+                <li><strong>Developer Notes & Documentation</strong> → Created clear implementation guides to ensure devs understood the system.</li>
+                <li><strong>Scalability & Flexibility</strong> → Designed for multiple applications & projects, reducing duplicate work.</li>
+                <li><strong>Governance & Adoption</strong> → Established design principles & best practices for teams adopting the system.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Implementation in Action</h2>
+            <ul>
+                <li>First implemented in LoanSphere Loss Mitigation UI, then expanded to Bankruptcy PCN (100% adoption).</li>
+                <li>PCN became the first major implementation of the new design system UI components.</li>
+                <li>The design system was battle-tested, proving its scalability, efficiency, and flexibility in real-world application development.</li>
+            </ul>
+
+            <div class="component-example">
+                <h3>Component in Action: <span class="italic">Tile</span></h3>
+                <!-- <h3>Component in Action:</h3>
+                <h4>"Tile" (Molecule)</h4> -->
+                <p>To help streamline decision-making for loan specialists, I introduced a tile-based layout at the top of the Loss Mitigation interface. 
+                    These tiles display critical borrower, loan, and property data at a glance—minimizing clicks and improving task flow.</p>
+                <div class="component-layout">
+                    <div class="component-image">
+                        <a href="images/Loss Mit Decision Demo.png" class="lightbox">
+                            <img src="images/Loss-Mit-Decision-Demo-Thumb.png" alt="Loss Mitigation Decision screen">
+                        </a>    
+                    </div>
+                    <div class="component-code">
+    <pre><code>&lt;div class="tile"&gt;
+    &lt;header>Mortgagor(s)&lt;/header&gt;
+        &lt;summary>
+            &lt;i class="fa fa-users fa-2x"&gt;&lt;/i&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Simpson, Homer J.&lt;/li&gt;
+                &lt;li&gt;Simpson, Marge&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/summary&gt;
+    &lt;/div&gt;</code></pre>
+                        <p class="code-caption">Each tile used consistent semantic structure and styling for easy reuse and accessibility.</p>
+                    </div>
+                </div>
+
+                <h4>Design Highlights:</h4>
+                <ul>
+                    <li><strong>Reusable Molecule:</strong> Each tile is a modular UI component from the design system's Molecules tier.</li>
+                    <li><strong>Rapid Scan-ability:</strong> Prioritized typography and grouping for quick visual parsing of key data.</li>
+                    <li><strong>Consistency Across Screens:</strong> These tiles became a design pattern adopted in other modules.</li>
+                    <li><strong>Result:</strong> Reduced decision-making time and improved UX consistency across workflows.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Impact:</h2>
+            <h3>Quantifiable UX & Dev Wins</h3>
+            <ul>
+                <li>✅ <strong>30% reduction</strong> in UI development time across projects.</li>
+                <li>✅ Improved <strong>UI consistency</strong> across 5+ applications.</li>
+                <li>✅ Faster <strong>onboarding for new developers and designers</strong>.</li>
+                <li>✅ Reduced <strong>UX debt</strong>, preventing inconsistencies early.</li>
+                <li>✅ Standardized accessibility & compliance, ensuring WCAG adherence.</li>
+                <li>✅ Established a cross-team UI strategy, influencing future applications beyond my tenure.</li>
+            </ul>
+        </section>
+
+        <section class="case-lessons">
+            <h2>Lessons Learned & Takeaways</h2>
+            <ul>
+                <li><strong>Design Systems Require Evangelism</strong> - Developers don't adopt new systems overnight. Training, support, and advocacy were essential for success.</li>
+                <li><strong>Documentation matters</strong> - Clear developer notes and example implementations ensured teams could implement the system with confidence.</li>
+                <li><strong>Flexibility is Key</strong> - The system was designed to support multiple projects & future scalability.</li>
+                <li><strong>Atomic Design scales well</strong> - Breaking UI into <strong>small reusable</strong> components led to efficiency.</li>
+            </ul>
+        </section>
+
+        <section class="pdf-download">
+            <h2>Want to Dive Deeper?</h2>
+            <p>This case study provides a high-level overview, but if you'd like a more detailed breakdown—including 
+                additional visuals, workflows, and process insights—you can download the full case study.
+                <a href="pdfs/2025.03 BK Design System Case study.pdf" 
+                    class="blue" 
+                    target="_blank" 
+                    aria-label="Opens in new tab">Download&nbsp;Full&nbsp;Case&nbsp;Study</a>
+                <span class="subtle">(PDF,&nbsp;465KB)</span>
+            </p>
+            
+        </section>
+        
 
     </div>
 

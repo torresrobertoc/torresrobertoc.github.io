@@ -1,7 +1,6 @@
 
 .btn {
     display: inline-block;
-    padding: 12px 20px;
     font-size: 1.2rem;
     text-align: center;
     border-radius: 12px;
@@ -26,6 +25,7 @@
     color: var(--black);
     cursor: pointer;
     font-weight: 700;
+    padding: 12px 20px;
 }
 
 .btn-primary:hover {
@@ -38,6 +38,7 @@
     /* background: linear-gradient(177deg, white 0%, var(--paleblue) 100%); */
     border: 1px solid var(--lightblue);
     color: var(--baseblue);
+    padding: 6px 10px;
 }
 
 .btn-secondary:hover {

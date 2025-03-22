@@ -2,8 +2,6 @@
 /* ==== HERO ==== */
 header {
     text-align: center;
-    padding-right: 1em;
-    padding-left: 1em;
     padding-bottom: 2em;
 }
 
@@ -14,10 +12,18 @@ header img#Profile {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin: 0 0 .5em 0;
+}
+
 header p {
-    width: 90%;
     margin: auto;
-    padding: .5em;
+    padding: 0 0 1em 0;
     font-size: 1.1rem;
     line-height: 1.25;
 }
@@ -80,7 +86,7 @@ section {
 
     section .btn {
         width: 70%;
-        margin: .5em auto .75em auto;
+        margin: 0 auto 1em auto;
         max-width: 300px;
     }
 
@@ -97,10 +103,6 @@ section#FeaturedWork {
     font-family: var(--titlefont);
 }
 
-
-.flat   {
-    box-shadow: none;
-}
 
 /* MOBILE */
 @media (max-width: 680px) {
@@ -135,7 +137,7 @@ section#FeaturedWork {
     }
 
     header ul.metrics { 
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -147,19 +149,23 @@ section#FeaturedWork {
         grid-template-columns: 2fr 3fr;
         gap: 40px;
         align-items: center;
-        margin: 10% 5% 5% 5%;
+        margin: 10% 5% 2% 5%;
     }
     
-    header img#Profile {
-        width: 100%;
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
+        header img#Profile {
+            width: 100%;
+            grid-row-start: 1;
+            grid-column-start: 1;
+        }
 
-    header div {
-        grid-row-start: 1;
-        grid-column-start: 2;
-    }
+        header div {
+            grid-row-start: 1;
+            grid-column-start: 2;
+        }
+
+        header ul.metrics { 
+            width: 80%;
+        }
 
     #Support {
         display: grid;

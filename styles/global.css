@@ -16,9 +16,11 @@
     --titlefont: 'Inter', sans-serif;
     --bodyfont: 'Figtree', Tahoma, Geneva, Verdana, sans-serif;
     --iconfont: "Material Symbols Outlined";
+    --monofont: 'Inconsolata', monospace;
     --h1size: clamp(2rem, 5vw, 3rem); /* Scales based on viewport width */
     --h2size: clamp(1.75rem, 4vw, 2.5rem);
     --h3size: clamp(1.5rem, 3vw, 2rem);
+    --h4size: clamp(1.25rem, 2vw, 1.5rem);
     --largerbodysize: clamp(1.2rem, 2vw, 1.75rem);
     --bodysize: clamp(1rem, 2vw, 1.125rem);
     --smallerBodySize: clamp(.9rem, 2vw, 1.1rem);
@@ -29,7 +31,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Inter', sans-serif;
     color: var(--baseblue);
     line-height: 1.2;
-    margin: 0.5em 0 0.25em 0;
+    margin: 1em 0 0.25em 0;
 }
 
 h1 {
@@ -40,12 +42,17 @@ h1 {
 
 h2 {
     font-size: var(--h2size);
-    font-weight: 650;
+    font-weight: 700;
 }
 
 h3 {
     font-size: var(--h3size);
-    font-weight: 500;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: var(--h4size);
+    font-weight: 550;
 }
 
 body {
@@ -69,7 +76,6 @@ body {
     font-size: 0.9em;
     font-style: italic;
     color: var(--lightgray);
-    display: block;
 }
 
 .bold {
@@ -91,6 +97,11 @@ body {
 .block {
     display: block;
 }
+
+.flat   {
+    box-shadow: none;
+}
+
 /* END Helper classes */
 
 img {
@@ -99,6 +110,17 @@ img {
     height: auto;
     max-height: 100%;
 }
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--paleblue);
+    padding-left: 16px;
+    margin-left: 0;
+    color: var(--baselinegray);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
 
 
 .item .case-link {
@@ -118,3 +140,81 @@ img {
     .item .rwd-links .right {
         grid-column-start: 4;
     }
+
+/* styling the list-item number */
+ol {
+    padding-left: 1.25em;
+    color: var(--baseblue);
+    font-weight: 900;
+    font-family: var(--titlefont);
+}
+
+ol.plain {
+    color: var(--darkgray);
+    font-weight: normal;
+    font-family: var(--bodyfont);
+    font-size: var(--largerbodysize);
+}
+
+ol.h3,
+ul.h3 {
+    font-family: var(--titlefont);
+    font-size: var(--h3size);
+    font-weight: 500;
+}
+
+ol.h3 span,
+ul.h3 span {
+    font-size: var(--bodysize);
+}
+
+li h3 {
+    margin: 0;
+}
+
+ol ul {
+    font-family: var(--bodyfont);
+    color: var(--darkgray);
+    font-weight: normal;
+}
+
+ol ol {
+    padding-left: 1.2rem; /* Indent second-level ordered lists */
+    font-family: var(--bodyfont);
+    color: var(--darkgray);
+    font-weight: normal;
+    font-size: var(--largerbodysize);
+}
+
+ul:not(.breadcrumb) {
+    /* padding-left: 1.75rem; */
+    font-size: var(--bodysize);
+}
+
+ul li {
+    margin-top: .5rem;
+}
+
+ol.no-dots,
+ul.no-dots {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1.2rem;
+}
+
+li.check::before {
+    content: "✔"; /* Unicode checkmark */
+    color: green;
+    font-weight: bold;
+    margin-right: 8px; /* Adds spacing */
+
+}
+
+li.avoid::before {
+    content: "❌";
+    color: var(--lightgold);
+    font-weight: bold;
+    margin-right: 8px; /* Adds spacing */
+}
