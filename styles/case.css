@@ -71,11 +71,11 @@ li {
     text-align: center;
 }
 
-.component-image img {
-    max-width: 100%;
-    border: 1px solid var(--lightgray);
-    border-radius: 4px;
-}
+    .component-image img {
+        max-width: 100%;
+        border: 1px solid var(--lightgray);
+        border-radius: 4px;
+    }
 
 pre {
     background-color: var(--black);
@@ -101,12 +101,6 @@ code {
     font-style: italic;
 }
 
-@media (max-width: 768px) {
-    .component-layout {
-        flex-direction: column;
-    }
-}
-
 .case-study-callout {
     background-color: var(--palegold);
     border-left: 4px solid var(--lightgold);
@@ -116,7 +110,40 @@ code {
     font-size: 0.95rem;
 }
 
+    .case-study-callout h4 {
+        margin: 0;
+    }
 
-.case-study-callout h4 {
-    margin: 0;
+.design-fix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.design-fix-grid img {
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.design-fix-grid figcaption {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.design-fix-grid figcaption h5 {
+    margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+    .component-layout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1023px) {
+    .design-fix-grid {
+        grid-template-columns: 1fr;
+    }
 }
