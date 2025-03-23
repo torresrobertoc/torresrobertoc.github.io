@@ -45,7 +45,7 @@ function updateNavbarHeight() {
 window.addEventListener("load", updateNavbarHeight);
 window.addEventListener("resize", updateNavbarHeight);
 
-// Lightbox Impolementation
+// Lightbox Implementation
 document.querySelectorAll('.lightbox').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
