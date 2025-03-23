@@ -16,7 +16,7 @@ section {
 }
 
     section#case-studies {
-        background-color: rgba(255, 241, 204, 50%);
+        background-color: var(--translucentgold);
     }
 
         section#case-studies .subtle {

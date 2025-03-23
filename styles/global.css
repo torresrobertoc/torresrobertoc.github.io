@@ -8,6 +8,7 @@
     --basegold: #B08233;
     --lightgold: #FCC465;
     --palegold: #FFF1CC;
+    --translucentgold: rgba(255, 241, 204, 50%);
     --black: #030B17;
     --darkgray: #25282D;
     --basegray: #404245;
@@ -217,4 +218,25 @@ li.avoid::before {
     color: var(--lightgold);
     font-weight: bold;
     margin-right: 8px; /* Adds spacing */
+}
+
+
+#Testimonial.highlighted-box {
+    background-color: var(--translucentgold);
+    border-left: 6px solid var(--lightgold);
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+#Testimonial .quote {
+    font-size: var(--bodysize);
+    margin-bottom: 0.5rem;
+}
+
+#Testimonial .attribution {
+    font-size: var(--smallerBodySize);
+    font-style: normal;
+    color: var(--basegray);
 }

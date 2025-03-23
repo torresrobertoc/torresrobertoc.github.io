@@ -14,13 +14,13 @@ footer {
         gap: 8px;
     }
 
-    footer .links .left {
-        text-align: left;
-    }
+        footer .links .left {
+            text-align: left;
+        }
 
-    footer .links .right {
-        text-align: right;
-    }
+        footer .links .right {
+            text-align: right;
+        }
 
         footer .links a,
         footer .links a:visited {
@@ -28,9 +28,13 @@ footer {
             display: inline-block;
             padding: 8px 8px 12px 8px;
         }
-    
-        footer .links a:hover {
-            color: var(--paleblue);
+
+            footer .links a:hover {
+                color: var(--paleblue);
+            }
+
+        footer .links .full-span {
+            grid-column: 1 / -1;
         }
 
     /* Ensure footer text is centered on small screens */
@@ -48,7 +52,7 @@ footer {
         grid-template-columns: min-content auto min-content;
     }
 
-    footer .links .right { 
+    footer .links .right {
         grid-column-start: 3;
     }
 
@@ -57,4 +61,3 @@ footer {
         grid-column-start: 2;
     }
 }
-
