@@ -55,3 +55,9 @@ section {
         font-weight: 600;
         font-family: var(--titlefont);
     }
+
+
+#DownloadPortfolio {
+    text-align: center;
+    margin-top: 2em;
+}

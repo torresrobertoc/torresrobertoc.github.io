@@ -60,14 +60,13 @@ li {
 .component-layout {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 0 2rem;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 2rem 0;
 }
 
 .component-image {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     text-align: center;
 }
 
@@ -90,14 +89,14 @@ code {
 }
 
 .component-code {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     font-size: 0.9rem;
 }
 
 .code-caption {
     font-size: 0.85rem;
     color: var(--basegray);
-    margin-top: 0.5rem;
+    margin-top: 0;
     font-style: italic;
 }
 

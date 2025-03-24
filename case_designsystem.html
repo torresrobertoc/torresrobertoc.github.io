@@ -42,7 +42,7 @@
 
             <h4>Context:</h4>
             <ul>
-                <li>The LoanSphere (formerly Fusion/Rincon) platform was transitioning away from Silverlight/XAML to a modern tech stack.</li>
+                <li>The LoanSphere (formerly <a href="case_rincon.html" class="blue">Fusion/Rincon</a>) platform was transitioning away from Silverlight/XAML to a modern tech stack.</li>
                 <li>UI inconsistency was a major blocker—each team designed their own components, causing visual fragmentation and higher dev effort.</li>
                 <li>Accessibility (WCAG compliance) was not prioritized.</li>
                 <li>UI scalability was not planned, making the applications hard to maintain.</li>
@@ -71,8 +71,12 @@
                         <li>Established Atomic Design Principles to create consistent, reusable UI components.</li>
                         <li>Developed UI libraries using HTML, CSS, and jQuery, ensuring rapid implementation across projects.</li>
                         <li>Created a centralized documentation hub with developer notes and implementation guidelines.</li>
+                        <li><p class="subtle">Example of how UI components were modularized into Atoms, Molecules, and Organisms for reusability and consistency:</p>
+                            <img src="images/Atomic Design System.png" alt="Atomic Design component tiers" class="flat"/>
+                        </li>
                     </ul>
                 </li>
+
 
                 <li><h3>Developer Support &amp; System Evangelism</h3>
                     <ul>
@@ -97,7 +101,7 @@
         <section>
             <h2>Implementation in Action</h2>
             <ul>
-                <li>First implemented in LoanSphere Loss Mitigation UI, then expanded to Bankruptcy PCN (100% adoption).</li>
+                <li>First implemented in LoanSphere Loss Mitigation UI, then expanded to <a href="case_pcn.html" class="blue">Bankruptcy PCN</a> (100% adoption).</li>
                 <li>PCN became the first major implementation of the new design system UI components.</li>
                 <li>The design system was battle-tested, proving its scalability, efficiency, and flexibility in real-world application development.</li>
             </ul>
@@ -107,24 +111,26 @@
                 <p>To help streamline decision-making for loan specialists, I introduced a tile-based layout at the top of the Loss Mitigation interface. 
                     These tiles display critical borrower, loan, and property data at a glance—minimizing clicks and improving task flow.</p>
                 <div class="component-layout">
+
+                    <div class="component-code">
+    <pre><code>&lt;div class="tile"&gt;
+    &lt;header>Mortgagor(s)&lt;/header&gt;
+    &lt;summary>
+        &lt;i class="fa fa-users fa-2x"&gt;&lt;/i&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Simpson, Homer J.&lt;/li&gt;
+            &lt;li&gt;Simpson, Marge&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/summary&gt;
+&lt;/div&gt;</code></pre>
+                        
+                    </div>
                     <div class="component-image">
                         <a href="images/Loss Mit Decision Demo.png" class="lightbox">
                             <img src="images/Loss-Mit-Decision-Demo-Thumb.png" alt="Loss Mitigation Decision screen">
                         </a>    
                     </div>
-                    <div class="component-code">
-    <pre><code>&lt;div class="tile"&gt;
-    &lt;header>Mortgagor(s)&lt;/header&gt;
-        &lt;summary>
-            &lt;i class="fa fa-users fa-2x"&gt;&lt;/i&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Simpson, Homer J.&lt;/li&gt;
-                &lt;li&gt;Simpson, Marge&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/summary&gt;
-    &lt;/div&gt;</code></pre>
-                        <p class="code-caption">Each tile used consistent semantic structure and styling for easy reuse and accessibility.</p>
-                    </div>
+                    <p class="code-caption">Each tile used consistent semantic structure and styling for easy reuse and accessibility.</p>
                 </div>
 
                 <h4>Design Highlights:</h4>
@@ -170,7 +176,11 @@
                     aria-label="Opens in new tab">Download&nbsp;Full&nbsp;Case&nbsp;Study</a>
                 <span class="subtle">(PDF,&nbsp;465KB)</span>
             </p>
-            
+            <p>See also:</p>
+            <ul>
+                <li><a href="case_rincon.html" class="blue">Case Study: Rincon - Redesigning a Legacy Platform</a></li>
+                <li><a href="case_pcn.html" class="blue">Case Study: Bankruptcy PCN</a></li>
+            </ul>
         </section>
         
 
