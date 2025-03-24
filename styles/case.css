@@ -15,6 +15,10 @@ li {
     margin-bottom: .5em;
 }
 
+.case-meta {
+    margin-bottom: 1em;
+}
+
 .tldr {
     background-color: var(--paleblue);
     padding: .5em 1em 1em 1em;
