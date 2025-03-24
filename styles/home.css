@@ -1,54 +1,59 @@
-
 /* ==== HERO ==== */
 header {
     text-align: center;
 }
 
-header img#Profile {
-    border-radius: 15%;
-    margin: 20px auto 12px auto;
-    max-width: 288px;
-    text-align: center;
-}
+    header #ProfileVideo {
+        border-radius: 15%;
+        margin: 20px auto 12px auto;
+        text-align: center;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+        header #ProfileVideo iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
-header h1 {
-    margin: 0;
-    text-transform: uppercase;
-}
+    header h1 {
+        margin: 0;
+        text-transform: uppercase;
+    }
 
-header h2 {
-    margin: 0 0 .5em 0;
-}
+    header h2 {
+        margin: 0 0 .5em 0;
+    }
 
-header p {
-    margin: auto;
-    padding: 0 0 1em 0;
-    font-size: 1.1rem;
-    line-height: 1.25;
-}
+    header p {
+        margin: auto;
+        padding: 0 0 1em 0;
+        font-size: 1.1rem;
+        line-height: 1.25;
+    }
 
-header a {
-    display: block;
-}
+    header a {
+        display: block;
+    }
 
-header a.btn {
-    width: 80%;
-    max-width: 300px;
-}
+        header a.btn {
+            width: 80%;
+            max-width: 300px;
+        }
 
-header ul.metrics {
-    text-align: left;
-    width: 85%;
-    padding-top: .25em;
-    margin: auto;
-    color: var(--basegray);
-    font-style: italic;
-}
+    header ul.metrics {
+        text-align: left;
+        width: 85%;
+        padding-top: .25em;
+        margin: auto;
+        color: var(--basegray);
+        font-style: italic;
+    }
 
-header ul.metrics li {
-    line-height: 1;
-    margin-bottom: .6em;
-}
+        header ul.metrics li {
+            line-height: 1;
+            margin-bottom: .6em;
+        }
 
 /* ==== END HERO ==== */
 
@@ -57,37 +62,39 @@ section {
     text-align: center;
     padding: 1% 6% 4% 6%;
 }
-    section h2 {
-        text-align: left;
-        padding: 0;
-    }
 
-    section h3 {
-        text-align: left;
-        margin: .5rem 0 .20rem;
-    }
+section h2 {
+    text-align: left;
+    padding: 0;
+}
 
-        section h3 a {
-            padding-left: 0;
-        }
+section h3 {
+    text-align: left;
+    margin: .5rem 0 .20rem;
+}
 
-    section img {
-        filter: saturate(0);
-    }
-        section img:hover {
-            filter: saturate(100%);
-        }
+section h3 a {
+    padding-left: 0;
+}
 
-    section p {
-        padding: 4px 4px 8px 0;
-        text-align: left;
-    }
+section img {
+    filter: saturate(0);
+}
 
-    section .btn {
-        width: 70%;
-        margin: 0 auto 1em auto;
-        max-width: 300px;
-    }
+section img:hover {
+    filter: saturate(100%);
+}
+
+section p {
+    padding: 4px 4px 8px 0;
+    text-align: left;
+}
+
+section .btn {
+    width: 70%;
+    margin: 0 auto 1em auto;
+    max-width: 300px;
+}
 
 section#FeaturedWork {
     background-color: var(--palegold);
@@ -106,21 +113,21 @@ section#FeaturedWork {
 /* MOBILE */
 @media (max-width: 680px) {
 
-    header img#Profile {
+    header #ProfileVideo {
         width: 55%
     }
-    
+
     header div.company-logos img {
         width: 40%;
         margin: 5% 4% 5% 4%;
     }
-    
+
 }
 
 /* Transition to TABLET */
 @media (min-width: 680px) {
 
-    header img#Profile {
+    header #ProfileVideo {
         width: 30%
     }
 
@@ -135,7 +142,7 @@ section#FeaturedWork {
         width: 26%;
     }
 
-    header ul.metrics { 
+    header ul.metrics {
         width: 70%;
     }
 }
@@ -150,21 +157,21 @@ section#FeaturedWork {
         align-items: center;
         margin: 10% 5% 2% 5%;
     }
-    
-        header img#Profile {
-            width: 100%;
-            grid-row-start: 1;
-            grid-column-start: 1;
-        }
 
-        header div {
-            grid-row-start: 1;
-            grid-column-start: 2;
-        }
+    header #ProfileVideo {
+        width: 100%;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
 
-        header ul.metrics { 
-            width: 80%;
-        }
+    header #ProfileIntro {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    header ul.metrics {
+        width: 80%;
+    }
 
     #Support {
         display: grid;
@@ -192,4 +199,3 @@ section#FeaturedWork {
     }
 
 }
-
