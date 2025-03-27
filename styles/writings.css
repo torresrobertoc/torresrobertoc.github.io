@@ -19,7 +19,7 @@ img {
 
 /* individual writing page */
 main p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2em;
 }
 
 /* writings list page */
@@ -28,7 +28,7 @@ main .item p {
 }
 
 .item {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.75em;
 }
 
 .item h2,
@@ -68,4 +68,10 @@ main .item p {
 
 img#IntuitiveUI {
     max-width: 679px;
+}
+
+ul.no-dots,
+ol.no-dots {
+  list-style-type: none;
+  padding-left: 0;
 }
