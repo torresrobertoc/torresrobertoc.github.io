@@ -97,7 +97,7 @@ section .btn {
 }
 
 section#FeaturedWork {
-    background-color: var(--palegold);
+    background-color: var(--translucentgold);
 }
 
 .item {
